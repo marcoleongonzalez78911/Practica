@@ -27,12 +27,21 @@ public class ViewEditorTexto extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jMenu1 = new javax.swing.JMenu();
         jScrollPane1 = new javax.swing.JScrollPane();
         jta_archivo = new javax.swing.JTextArea();
+        jbtn_abrir = new javax.swing.JButton();
+        jbtn_guardar = new javax.swing.JButton();
+
+        jMenu1.setText("jMenu1");
 
         jta_archivo.setColumns(20);
         jta_archivo.setRows(5);
         jScrollPane1.setViewportView(jta_archivo);
+
+        jbtn_abrir.setText("abrir");
+
+        jbtn_guardar.setText("guardar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -42,11 +51,21 @@ public class ViewEditorTexto extends javax.swing.JPanel {
                 .addContainerGap()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 380, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(60, 60, 60)
+                .addComponent(jbtn_abrir)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jbtn_guardar)
+                .addGap(91, 91, 91))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(97, 97, 97)
+                .addGap(24, 24, 24)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jbtn_abrir)
+                    .addComponent(jbtn_guardar))
+                .addGap(50, 50, 50)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 192, Short.MAX_VALUE)
                 .addContainerGap())
         );
@@ -54,7 +73,10 @@ public class ViewEditorTexto extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JMenu jMenu1;
+    public javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JButton jbtn_abrir;
+    public javax.swing.JButton jbtn_guardar;
     public javax.swing.JTextArea jta_archivo;
     // End of variables declaration//GEN-END:variables
 }

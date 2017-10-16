@@ -27,10 +27,11 @@ public class ControllerEditorTexto {
     
 public ControllerEditorTexto(ModelEditorTexto model_editortexto, ViewEditorTexto view_editortexto){
        this.model_editortexto = model_editortexto;
+
        this.view_editortexto = view_editortexto;
-   //    view_editortexto.jmi_abrir.addActionListener(e -> jmi_abrirclick());
-     //  view_editortexto.jmi_guardar.addActionListener(e -> jmi_guardarclick());
-       //view_editortexto.jmi_salir.addActionListener(e -> jmi_salirclick());
+      view_editortexto.jbtn_abrir.addActionListener(e -> jbtn_abrirclick());
+      view_editortexto.jbtn_guardar.addActionListener(e -> jbtn_guardarclick());
+     // view_editortexto.jmi_salir.addActionListener(e -> jmi_salirclick());
       
 
  initView();
@@ -38,7 +39,7 @@ public ControllerEditorTexto(ModelEditorTexto model_editortexto, ViewEditorTexto
     
     
     
-  private void jmi_abrir(){
+  private void jbtn_abrir(){
   try{
       jfc.showOpenDialog(view_editortexto);
       
@@ -73,7 +74,7 @@ public ControllerEditorTexto(ModelEditorTexto model_editortexto, ViewEditorTexto
   
    }//abrir 
   
-    private void jmi_guardar(){
+    private void jbtn_guardar(){
   try{
      fw = new FileWriter(model_editortexto.getArchivo(),false);
      fw.write(view_editortexto.jta_archivo.getText());
@@ -111,12 +112,12 @@ public ControllerEditorTexto(ModelEditorTexto model_editortexto, ViewEditorTexto
         this.view_editortexto.setVisible(true);
         
     }
-    private void jmi_abrirclick(){
-        jmi_abrir();
+    private void jbtn_abrirclick(){
+        jbtn_abrir();
     
     }
-    private void jmi_guardarclick(){
-        jmi_guardar();
+    private void jbtn_guardarclick(){
+        jbtn_guardar();
     }
     private void jmi_salirclick(){
         
