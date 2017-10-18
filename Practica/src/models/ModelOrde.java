@@ -10,5 +10,15 @@ package models;
  * @author mark
  */
 public class ModelOrde {
+    int valor;
+    int cont;
+    String  a;
+    
+    public int getValor(){
+        return valor;
+    }
+    public void setNum(int valor){
+        this.valor = valor;
+    } 
     
 }

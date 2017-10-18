@@ -32,7 +32,7 @@ public class ViewOrde extends javax.swing.JPanel {
         jl_lista = new javax.swing.JList<>();
         jl_promedio = new javax.swing.JLabel();
         jtf_promedio = new javax.swing.JTextField();
-        jbtn_promedio = new javax.swing.JButton();
+        jbtn_agregar = new javax.swing.JButton();
         jbtn_asc = new javax.swing.JButton();
         jl_titulo = new javax.swing.JLabel();
 
@@ -40,7 +40,7 @@ public class ViewOrde extends javax.swing.JPanel {
 
         jl_promedio.setText("Promedio");
 
-        jbtn_promedio.setText("Promedio");
+        jbtn_agregar.setText("Agregar");
 
         jbtn_asc.setText("ASC");
 
@@ -60,7 +60,7 @@ public class ViewOrde extends javax.swing.JPanel {
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jbtn_promedio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jbtn_agregar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jbtn_asc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(11, 11, 11))
                     .addGroup(layout.createSequentialGroup()
@@ -82,7 +82,7 @@ public class ViewOrde extends javax.swing.JPanel {
                 .addGap(41, 41, 41)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jtf_valor, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jbtn_promedio))
+                    .addComponent(jbtn_agregar))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -101,8 +101,8 @@ public class ViewOrde extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JScrollPane jScrollPane1;
+    public javax.swing.JButton jbtn_agregar;
     public javax.swing.JButton jbtn_asc;
-    public javax.swing.JButton jbtn_promedio;
     public javax.swing.JList<String> jl_lista;
     public javax.swing.JLabel jl_promedio;
     public javax.swing.JLabel jl_titulo;
